@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+}
+
+footer{
+    min-height:90px;
+    background-color: #282828;
+}
+
+.sidebar{
+    min-width: 230px;
+    border: 2px solid red;
+}
+
+.music-wrapper{
+    flex-grow: 1;
+    border: 2px solid green;
+}
