@@ -8,6 +8,9 @@ html{
     font-family: 'Inter', sans-serif;
 }
 
+/*RESET*/
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -28,11 +31,36 @@ footer{
 }
 
 /******** MAIN ********/
+
+/*sidebar*/
 .sidebar{
     min-width: 230px;
     background-color: black; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
+.logo{
+    height: 70px;
+}
+.logo img{
+    width: 130px;
+}
+
+.widjet__element{
+    color: #656565;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.widjet__element i{font-size:26px;}
+.active{color:white;}
+
+
+/*music-wrapper*/
 .music-wrapper{
     flex-grow: 1;
     background-color: #141922;
