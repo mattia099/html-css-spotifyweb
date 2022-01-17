@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Inter', sans-serif;
+}
 
 body{
     display: flex;
@@ -13,21 +16,102 @@ body{
 
 main{
     flex-grow: 1;
-    background-color: black;
     display: flex;
 }
 
 footer{
     min-height:90px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    gap:20px
 }
 
+/* MAIN */
 .sidebar{
     min-width: 230px;
-    border: 2px solid red;
+    background-color: black; 
 }
 
 .music-wrapper{
     flex-grow: 1;
     border: 2px solid green;
+}
+
+/* FOOTER */
+
+.current-song, .extra-control{
+    min-width: 230px;
+    border: 2px solid blue;
+    
+
+}
+
+.current-song{
+    
+}
+
+.player-control{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    
+}
+
+.player__inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px
+}
+.music-timeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: white;
+    font-weight: 600;
+    min-width: calc(40% + 125px);
+}    
+
+.barra{
+    flex-grow: 1;
+    height: 4px;
+    background-color: rgb(193, 193, 193,0.3);
+}
+
+.current-time{
+    background-color: #C1C1C1;
+    width: 30%;
+    height: 4px;  
+    position: relative; 
+    border-radius: 3px;
+}
+
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translate(50%,-25%);
+    z-index: 1;
+}
+.barra:hover .current-time{
+    background-color: rgb(10, 241, 10);
+}
+.player__inputs i{
+    color: white;
+    font-size:20px;
+    cursor: pointer;
+}
+.far.fa-play-circle{
+    font-size: 33px;
+    margin:0 10px;
 }

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans&family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
@@ -19,7 +25,31 @@
   
   
   <footer>
+    <div class="current-song"></div>
 
+    <div class="player-control">
+      <div class="player__inputs">
+        <i class="fas fa-random"></i>
+        <i class="fas fa-step-backward"></i>
+        <i class="far fa-play-circle big-icon"></i>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-redo-alt"></i>
+      </div>
+
+      <div class="music-timeline">
+        <span>0:25</span>
+        <div class="barra">
+            <div class="current-time">
+                <div class="ball"></div>
+            </div>
+        </div>   
+        <span>4:35</span>   
+      </div>
+
+
+    </div>
+
+    <div class="extra-control"></div>
 
   </footer>
     
