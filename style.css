@@ -27,7 +27,7 @@ footer{
     gap:20px
 }
 
-/* MAIN */
+/******** MAIN ********/
 .sidebar{
     min-width: 230px;
     background-color: black; 
@@ -35,24 +35,37 @@ footer{
 
 .music-wrapper{
     flex-grow: 1;
-    border: 2px solid green;
+    background-color: #141922;
 }
 
-/* FOOTER */
+/******** FOOTER ********/
 
-.current-song, .extra-control{
-    min-width: 230px;
-    border: 2px solid blue;
-    
-
-}
-
+/*CURRENT SONG*/
 .current-song{
-    
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.player-control{
+.now-playing-widget{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.song__name{color: #FEFEFE;}
+.song__artist{color: #858585; font-size:13px;}
+
+.song-button{
+    color:#858585;
+    font-size: 18px; 
     
+}
+.song-button i{margin:0 7px; cursor: pointer;}
+
+/*PLAYER CONTROL*/
+.player-control{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,10 +115,12 @@ footer{
     right: 0;
     transform: translate(50%,-25%);
     z-index: 1;
+    visibility: hidden;
 }
-.barra:hover .current-time{
-    background-color: rgb(10, 241, 10);
-}
+
+.barra:hover .current-time{background-color: rgb(10, 241, 10);}
+.barra:hover .ball{visibility: visible;}
+
 .player__inputs i{
     color: white;
     font-size:20px;
@@ -115,3 +130,20 @@ footer{
     font-size: 33px;
     margin:0 10px;
 }
+
+/*EXTRA-CONTROL*/
+.extra-control{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin-right: 10px;
+}
+.extra-control .barra{
+    width: 100px;
+}
+
+.extra-control i{
+    color: white;
+    cursor:pointer;
+}
+
