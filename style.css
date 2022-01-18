@@ -53,7 +53,7 @@ footer{
 .logo{
     height: 70px;
 }
-.logo__big-sreen{
+.logo__big-screen{
     width: 130px;
 }
 .logo__small-screen{
@@ -67,6 +67,11 @@ footer{
     align-items: center;
     gap: 10px;
     padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.widjet__element:hover{
+    color:white
 }
 
 .widjet__element i{font-size:26px;}
@@ -127,6 +132,10 @@ footer{
     font-weight: bold;
 }
 
+.button-upgrade:hover{
+    color: chartreuse;
+}
+
 .main-content__menu ul{display: contents;}
 .main-content__menu{
     display: flex;
@@ -142,6 +151,7 @@ footer{
     list-style: none;
     position: relative;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .tiny-border::after{
@@ -154,6 +164,12 @@ footer{
     left: 50%;
     transform: translate(-50%,0);
 }
+
+.main-content__menu li:hover{
+    color: white;
+}
+
+
 
 .album-section{margin-left: 20px;}
 .album-section__title{color: white; font-size: 24px; padding-top: 40px; padding-bottom: 10px;}
@@ -171,6 +187,7 @@ footer{
 .bordi-tondi{
     border-radius:50%;
 }
+
 
 /******** FOOTER ********/
 
