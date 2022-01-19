@@ -87,19 +87,27 @@ footer{
     font-size: 40px;
 }
 
+.square{
+    width: 32px;
+    height: 32px;
+    background-color: #858585;
+    border-radius: 50%;
+    text-align: center;
+}
 .far.fa-user{
     color: white;
     z-index: 1;
-    position: relative;
+    
 }
 
-
+.download{
+    width: 18px;
+}
 .widjet.bottom .widjet__element:first-child{
     border-bottom: 1px solid #656565;
     margin-bottom: 15px;
 }
 
-.download{display: none;}
 
 /*main-content*/
 .main-content{
@@ -314,9 +322,7 @@ footer{
     .logo{
         height: auto;
     }
-    .download{
-        display: block;
-    }
+    
     .widjet__element:first-child{
         border-bottom:none !important;
         margin-bottom: none !important;
