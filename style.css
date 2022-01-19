@@ -8,9 +8,6 @@ html{
     font-family: 'Inter', sans-serif;
 }
 
-/*RESET*/
-
-
 body{
     display: flex;
     flex-direction: column;
@@ -52,12 +49,13 @@ footer{
 .logo{
     height: 70px;
 }
+
 .logo__big-screen{
     width: 130px;
 }
+
 .logo__small-screen{
     display: none;
-    
 }
 
 .widjet__element{
@@ -93,6 +91,7 @@ footer{
     border-radius: 50%;
     text-align: center;
 }
+
 .far.fa-user{
     color: white;
     z-index: 1;
@@ -139,7 +138,8 @@ footer{
 }
 
 .button-upgrade:hover{
-    color: chartreuse;
+    border: 2px solid;
+    font-size: 16px;
 }
 
 .main-content__menu ul{display: contents;}
@@ -176,7 +176,6 @@ footer{
 }
 
 
-
 .album-section{margin-left: 20px;}
 .album-section__title{color: white; font-size: 24px; padding-top: 40px; padding-bottom: 10px;}
 .album-wrapper{
@@ -185,15 +184,47 @@ footer{
     flex-wrap: wrap;
 }
 
-.album img{width: 160px; font-size: 0;}
 .album__title{color: white; text-align: center; padding-top: 13px;}
 .album__artist{color: #7D7F84; text-align: center; padding-top: 7px;}
 .album-section__info{color: #7D7F84; padding-bottom: 25px;}
 .album-section__title:first-child{padding-bottom: 30px;}
-.bordi-tondi{
-    border-radius:50%;
+.bordi-tondi{border-radius:50%; overflow: hidden;}
+.album{cursor: pointer;}
+
+.img-box{
+    width: 160px;
+    position: relative;
 }
 
+.album img{
+    width: 100%; 
+    font-size: 0;
+}
+
+.album:hover .img-box::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.album:hover .play{
+    display: block;
+}
+
+.play{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 2;
+    display: none;
+}
 
 /******** FOOTER ********/
 
@@ -221,6 +252,9 @@ footer{
 }
 .song-button i{margin:0 7px; cursor: pointer;}
 
+.song-button i:hover{
+    color: white;
+}
 /*PLAYER CONTROL*/
 .player-control{
     display: flex;
@@ -283,9 +317,14 @@ footer{
     font-size:20px;
     cursor: pointer;
 }
+
+.player__inputs i:hover{font-size: 22px;}
+
+
 .far.fa-play-circle{
     font-size: 33px;
 }
+.far.fa-play-circle:hover{font-size: 35px;}
 
 /*EXTRA-CONTROL*/
 .extra-control{
@@ -304,6 +343,11 @@ footer{
     cursor:pointer;
 }
 
+.extra-control i:hover{
+    font-size: 18px;
+}
+
+/*MEDIA QUERY*/
 @media screen and (max-width:560px) {
     .widjet.playlist, .widjet__element span, .logo__big-screen ,.fas.fa-info-circle{
         display: none;
