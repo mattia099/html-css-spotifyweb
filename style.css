@@ -41,7 +41,6 @@ footer{
 /*sidebar*/
 .sidebar{
     min-width: 230px;
-    
     background-color: black; 
     display: flex;
     justify-content: space-between;
@@ -64,7 +63,7 @@ footer{
 .widjet__element{
     color: #656565;
     display: flex;
-    align-items: center;
+    
     gap: 10px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -97,7 +96,6 @@ footer{
 .far.fa-user{
     color: white;
     z-index: 1;
-    
 }
 
 .download{
@@ -327,6 +325,14 @@ footer{
         border-bottom:none !important;
         margin-bottom: none !important;
         padding-bottom: none !important;
+    }
+
+    .widjet__element{
+        display: flex;
+        justify-content: center;
+    }
+    .download{
+        margin-right: 3px;
     }
     
     
