@@ -63,7 +63,7 @@ footer{
 .widjet__element{
     color: #656565;
     display: flex;
-    
+    align-items: center;
     gap: 10px;
     padding-bottom: 15px;
     cursor: pointer;
